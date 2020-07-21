@@ -6,7 +6,7 @@ class AVLTree:
     def __len__(self):
         return self.count
 
-    def insert(self, newItem):
+    def insert(self, newItem: object) -> object:
         cond = True
         if self.count == 0:
             self.root = TreeNode(newItem)
@@ -254,4 +254,3 @@ class TreeNode:
 
 if __name__ == "__main__":
     a = AVLTree()
-    
